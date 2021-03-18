@@ -26,8 +26,8 @@ The following steps were completed on Ubuntu 20.04:
   - If you run into an error that looks like this: 
   ```
   The following packages have unmet dependencies:
- libapache2-mod-php7.4 : Depends: php7.4-common (= 7.4.3-4ubuntu2.4) but 7.4.9-1+ubuntu18.04.1+deb.sury.org+1 is to be installed
-E: Unable to correct problems, you have held broken packages.
+  libapache2-mod-php7.4 : Depends: php7.4-common (= 7.4.3-4ubuntu2.4) but 7.4.9-1+ubuntu18.04.1+deb.sury.org+1 is to be installed
+  E: Unable to correct problems, you have held broken packages.
   ```
   - You can fix it with: `sudo apt remove php7.4-common` and attempting to re-install
 - Turn on the php mod for apache: `sudo a2enmod php7.4`
