@@ -13,11 +13,9 @@ class Core
 
     public function __construct()
     {
-        //print_r($this->getUrl());
-
         $url = $this->getUrl();
 
-        // Get the controller
+        // Name of controller is always an uppercase file
         $controller = ucwords($url[0]);
         if (file_exists("../app/controllers/$controller.php")) {
             $this->currentController = $controller;
@@ -25,7 +23,6 @@ class Core
         }
 
         require_once "../app/controllers/{$this->currentController}.php";
-
         $this->currentController = new $this->currentController;
     }
 
