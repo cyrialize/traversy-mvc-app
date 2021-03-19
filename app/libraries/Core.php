@@ -13,7 +13,20 @@ class Core
 
     public function __construct()
     {
-        print_r($this->getUrl());
+        //print_r($this->getUrl());
+
+        $url = $this->getUrl();
+
+        // Get the controller
+        $controller = ucwords($url[0]);
+        if (file_exists("../app/controllers/$controller.php")) {
+            $this->currentController = $controller;
+            unset($url[0]);
+        }
+
+        require_once "../app/controllers/{$this->currentController}.php";
+
+        $this->currentController = new $this->currentController;
     }
 
     public function getUrl()
@@ -23,6 +36,6 @@ class Core
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
             return $url;
-        } 
+        }
     }
 }
