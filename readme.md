@@ -54,3 +54,6 @@ Listen 8000
 # Other Resources
 
 I'm a big fan of the [No Framework Tutorial](https://github.com/PatrickLouys/no-framework-tutorial) by [Patrick Louys](https://github.com/PatrickLouys).
+
+# TODOs
+- [ ] Add doc blocks to all of the functions
