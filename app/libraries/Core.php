@@ -15,7 +15,6 @@ class Core
     {
         $url = $this->getUrl();
 
-        // First part of url is the controller
         // Name of controller is always an uppercase file
         $controller = ucwords($url[0]);
         if (file_exists("../app/controllers/$controller.php")) {
@@ -26,13 +25,12 @@ class Core
         require_once "../app/controllers/{$this->currentController}.php";
         $this->currentController = new $this->currentController;
 
-        // Second part of the url is the method of the controller
         if (isset($url[1]) && method_exists($this->currentController, $url[1])) {
             $this->currentMethod = $url[1];
             unset($url[1]);
         }
 
-        // Remaining parts of the url are parameters
+        // Other parts of the url are unset, all remaining parts are parameters
         $this->params = $url ? array_values($url) : [];
 
         // Call a callback with array of params
