@@ -13,7 +13,13 @@ It also opens you up to the possibilities of _not_ using a framework when workin
 # Differences between this code and the course
 - I went through this course on Linux instead of Windows, so my setup was different (see the section below on how to set it up for Linux)
 - For `config.php` I created a `config.ini` file to load in sensitive things and added `config.ini` to the `.gitignore`
-- Anytime there were single quotes with strings being appended, I switched them to double quotes and string interpolation (just my personal preference)
+
+## Minor Differences
+Most of these are due to personal preference
+
+- Anytime there were single quotes with strings being appended, I switched them to double quotes and string interpolation 
+- Used `[]` instead of `array()`
+- Used command line MySQL and MySQL Workbench instead of PHPMyAdmin
 
 # Setting it up on Linux
 
