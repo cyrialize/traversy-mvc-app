@@ -2,7 +2,7 @@
 
 This repository contains the code created while following along with the [Object Oriented PHP & MVC course](https://www.udemy.com/course/object-oriented-php-mvc/) by [Traversy Media](https://www.traversymedia.com/).
 
-The code isn't exactly the same as what is presented within the course. There are some minor differences, like spacing, curly brackets, style, etc.
+The code isn't exactly the same as what is presented within the course. There are some minor differences, like spacing, curly brackets, style, etc. See below for more details.
 
 # Why do this course?
 
@@ -13,6 +13,7 @@ It also opens you up to the possibilities of _not_ using a framework when workin
 # Differences between this code and the course
 - I went through this course on Linux instead of Windows, so my setup was different (see the section below on how to set it up for Linux)
 - For `config.php` I created a `config.ini` file to load in sensitive things and added `config.ini` to the `.gitignore`
+- Anytime there were single quotes with strings being appended, I switched them to double quotes and string interpolation (just my personal preference)
 
 # Setting it up on Linux
 
