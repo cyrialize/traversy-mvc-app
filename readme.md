@@ -55,6 +55,14 @@ Listen 8000
 - Run `sudo systemctl start apache2` to start apache 
 - Run `sudo systemctl restart apache2` to restart apache
 
+# Solving Issues
+
+## `could not find driver` on Lesson 23 'The Database Class - Part 1'
+You're probably missing the `mysql` package for PHP. 
+
+Install it for your version of PHP: `sudo apt install php7.4-mysql`.
+
+Then restart apache.
 
 # Other Resources
 
