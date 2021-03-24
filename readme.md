@@ -10,6 +10,10 @@ Creating your own framework is a great way (in my opinion) to understand the inn
 
 It also opens you up to the possibilities of _not_ using a framework when working on a project.
 
+# Differences between this code and the course
+- I went through this course on Linux instead of Windows, so my setup was different (see the section below on how to set it up for Linux)
+- For `config.php` I created a `config.ini` file to load in sensitive things and added `config.ini` to the `.gitignore`
+
 # Setting it up on Linux
 
 Since `.htaccess` files are used for routing, you cannot use [PHP's built in server](https://www.php.net/manual/en/features.commandline.webserver.php), e.g. `php -S localhost:8000`. 
