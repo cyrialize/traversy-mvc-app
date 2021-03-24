@@ -6,7 +6,7 @@ $config = parse_ini_file('config.ini');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', $config['DB_PASS']);
-define('DB_NAME', 'tmvc');
+define('DB_NAME', 'tvmc');
 
 // App Root 
 define('APPROOT', dirname(dirname(__FILE__)));
