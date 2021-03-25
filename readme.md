@@ -75,4 +75,9 @@ Then restart apache.
 I'm a big fan of the [No Framework Tutorial](https://github.com/PatrickLouys/no-framework-tutorial) by [Patrick Louys](https://github.com/PatrickLouys).
 
 # TODOs
+These todos are additional things I've thought about adding to the code once I've completed the course.
+
+I may also split this code out and make my own version of the code.
+
 - [ ] Add doc blocks to all of the functions
+- [ ] Add type checking to functions
