@@ -27,3 +27,7 @@ Listen 8000
     </Directory>
 </VirtualHost>
 ```
+
+# SQL
+
+See `app.sql` for the SQL queries you could run for setting up the database (if you don't use PHPMyAdmin).
