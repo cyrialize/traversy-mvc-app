@@ -14,7 +14,7 @@ I wanted to keep the framework seperate for reference purposes.
 
 # Setting it up on Linux
 
-See the [other repo](https://github.com/cyrialize/traversy-mvc) for full set up steps.
+See the [other repo](https://github.com/cyrialize/traversy-mvc) for the full set up steps.
 
 Change the section you added in `etc/apache2/apache2.conf` to the following:
 ```
