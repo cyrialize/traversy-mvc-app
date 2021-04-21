@@ -20,5 +20,6 @@ CREATE TABLE posts (
     `user_id` INT,
     `title` VARCHAR(255),
     `body` TEXT,
-    `created_at` DATETIME DEFAULT current_timestamp
+    `created_at` DATETIME DEFAULT current_timestamp,
+    PRIMARY KEY (`id`)
 );
